@@ -1,0 +1,205 @@
+* {
+  font-family: 'Courier New', monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+html {
+  border: 45px solid black;
+  height: 130%;
+}
+
+body {
+  height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(195, 195, 195));
+}
+
+.heading-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.page-header {
+  font-size: 3em;
+}
+
+.bio {
+  font-size: 1.4em;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.button-2 {
+  text-decoration: none;
+  background-color: rgb(0 0 0);
+  border-radius: 25px;
+  border-width: 7px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  list-style: none;
+  padding: 10px 48px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-2:hover {
+  transition: 1s ease-in-out;
+  background: #b5b1b1;
+}
+
+.button-2:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.button-2 span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.item-header {
+  font-size: 2em;
+}
+
+.item-text {
+  font-size: 1.3em;
+  text-align: left;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  margin-top: 3%;
+}
+
+.my-div-item-1 {
+  background-color: #ffffff;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  margin-bottom: 5%;
+  width: 60%;
+  box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+}
+
+.my-div-item-2 {
+  background-color: #ffffff;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  margin-bottom: 5%;
+  width: 60%;
+  box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+}
+
+.my-div-item-3 {
+  background-color: #ffffff;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  margin-bottom: 5%;
+  width: 60%;
+  box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+}
+
+.my-div-item-4 {
+  background-color: #ffffff;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  margin-bottom: 5%;
+  width: 60%;
+  box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* notes: I should make the entire page a gradient from white to black. Then i should add a cool animation to the bio portion (make the letters get bigger 1 by 1.)
+then i need to go through and add a picture for each square. then in each website i need to fix the css so it looks better and matches the same theme as the 
+current site. i also want to add the mouse effect that is on the destroy lonely website */
